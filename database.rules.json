@@ -1,0 +1,24 @@
+{
+  "rules": {
+    
+    ".read": true,  // 2022-6-5
+    ".write": true,  // 2022-6-5
+    // ".read": "now < 1652073622373",  // 2022-6-5
+    // ".write": "now < 1652073622373",  // 2022-6-5
+    
+    "Real time track": {
+      "Delhi": {
+        "DIMTS": {
+          "Buses":{
+            "All_Running_Buses":{
+              "GeoQuery":{
+                ".indexOn": ["vehicle/timestamp"]
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}
